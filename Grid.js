@@ -9,8 +9,8 @@ function Grid(length, height) {
       throw new Error("Grid size cannot be smaller than 1x1");
   
     //set height and length of grid from passed in params
-    this.height = height === undefined ? 0 : height;
-    this.length = length === undefined ? 0 : length;
+    this.height = height === undefined ? 0 : parseInt(height,10);
+    this.length = length === undefined ? 0 : parseInt(length,10);
   
     // add lost position
     this.addLost = function (position) {
